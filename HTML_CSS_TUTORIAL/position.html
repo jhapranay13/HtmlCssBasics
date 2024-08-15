@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position properties</title>
+    </head>
+    
+    <style>
+        
+    </style>
+    
+    <body style="height: 3000px;
+        padding-top: 80px;
+        padding-left: 70px;">
+        <div style = "background-color: black;
+            color: white;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height:70px;
+            z-index: 100;">
+            Header
+        </div>
+
+        <div style = "background-color: green;
+            color: white;
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+            top: 70px;">
+            SideBar
+
+            <div style = "background-color: red;
+                color: white;
+                position: absolute;
+                top: 0px;
+                right: 0px;">
+                X
+            </div>
+        </div>
+
+        <div style = "background-color: red;
+            color: white;
+            position: absolute;
+            top: 70px;
+            right: 0px;">
+            position absolute
+        </div>
+        <div style="background-color: lightblue;
+            height: 200px;
+            width: 200px;
+            position: static;">
+            grid 1
+        </div>
+        <div style="background-color: pink;
+           height: 200px;
+           width: 200px;
+           position: relative;">
+           grid 2
+
+           <div style = "background-color: red;
+                color: white;
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                pointer-events: none;
+                white-space: nowrap;">
+                5:00
+            </div>
+        </div>
+    </body>
+</html>

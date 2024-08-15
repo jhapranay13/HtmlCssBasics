@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flexbox properties</title>
+    </head>
+    
+    <style>
+        .grid-container {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 30px;
+        }
+        .grid-container2 {
+            display: flex;
+            flex-direction: row;
+            column-gap: 10px;
+            row-gap: 15px;
+            height: 80px;
+            padding-bottom: 30px;
+        }
+
+        .grid-container3 {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            height: 80px;
+            border: solid;
+            border-color: grey;
+            justify-content: center;
+            padding-bottom: 30px;
+        }
+
+        .grid-container4 {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            height: 80px;
+            border: solid;
+            border-color: grey;
+            justify-content: space-between;
+            padding-bottom: 30px;
+            max-width: 200px; /* Won't expand any further */
+        }
+
+        .grid-container5 {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            height: 80px;
+            border: solid;
+            border-color: grey;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0; /* its gonna keep it's dimensiona dn won't shrink */
+        }
+    </style>
+    
+    <body>
+        <div class = "grid-container">
+            <div style="background-color: lightblue;">grid 1</div>
+            <div style="background-color: pink;">grid 2</div>
+        </div>
+
+        <div class = "grid-container2">
+            <div style="background-color: lightblue;">grid 1</div>
+            <div style="background-color: pink;">grid 2</div>
+            <div style="background-color: pink;">grid 3</div>
+            <div style="background-color: lightblue; flex: 1">grid 4</div>
+        </div>
+
+        <div class = "grid-container3">
+            <div style="background-color: lightblue; width: 100px;">grid 1</div>
+            <div style="background-color: pink; width: 100px;">grid 2</div>
+            <div style="background-color: lightblue; width: 100px;">grid 3</div>
+        </div>
+
+        <div class = "grid-container4">
+            <div style="background-color: lightblue; width: 100px;">grid 1</div>
+            <div style="background-color: pink; width: 100px;">grid 2</div>
+            <div style="background-color: lightblue; width: 100px;">grid 3</div>
+        </div>
+
+        <div class = "grid-container5">
+            <div style="background-color: lightblue; width: 100px;">grid 1</div>
+            <div style="background-color: pink; width: 100px;">grid 2</div>
+            <div style="background-color: lightblue; width: 100px;">grid 3</div>
+        </div>
+    </body>
+</html>

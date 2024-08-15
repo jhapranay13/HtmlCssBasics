@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image properties</title>
+    </head>
+    
+    <style>
+        .thumbnail{
+            width: 300px;
+            /*height: 300px;*/
+            object-fit: contain; /*to retain the originality of the image and not stretch it*/
+            /*object-fit: cover; */
+            object-position: left;/*left side of image willl cover right top and bottom*/
+            display: block;
+        }
+
+        .searchbox{
+            font-size: 20px;
+            display: block;
+        }
+        /* block element like paragraph or div takes up whole line
+        inline-block takes up only the space required
+        inline is just a text element like bold */
+        .video-title{
+            margin-top: 0;
+            /*ont-weight: bold;*/
+            font-weight: 500;
+            line-height: 20px;
+        }
+
+        .video-preview {
+            width: 300px;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 15px;
+        }
+        .profile-picture {
+            width: 50px;
+            vertical-align: top;
+
+        }
+
+        .profile-pic{
+            width: 40px;
+            border-radius: 50px;
+        }
+
+        .profile-info {
+            width: 200px;
+        }
+
+        .thumbnail-row{
+            margin-bottom: 12px;
+        }
+
+        .profile-info-grid {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+
+        @media (max-width : 750px) {
+            .profile-info-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width : 750px) {
+            .profile-info-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr, 1fr;
+            }
+        }
+
+        @media (max-width : 1000px) {
+            .profile-info-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width : 750px)  and (max-width : 999px){
+            .profile-info-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    </style>
+    
+    <body>
+        <input type="text" placeholder="Search" class="searchbox"/>
+        <div class = "video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnail-1.webp"/>
+            </div>
+            <div class="profile-info-grid"> 
+                <div class="profile-picture">
+                    <img class="profile-pic" src="channel-1.jpeg"/>
+                </div>
+                <div class="profile-info">
+                    <p class="video-title">
+                        Talking Tech and AI With Google CEO
+                    </p>
+                    <p class="view-date">
+                        3.4M views &#183 6 Months <!--HTML entity-->
+                    </p>
+                    <p class="author">
+                        Macdonal &#x2713
+                    </p>
+                </div>
+            </div> 
+        </div>
+        <div class = "video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnail-2.webp"/>
+            </div>
+            <div class = 'profile-info-grid'>
+                <div class="profile-picture">
+                    <img class="profile-pic" src="channel-2.jpeg"/>
+                </div>
+                <div class="profile-info">
+                    <p class="video-title">
+                        Try Not to laugh challange# 9
+                    </p>
+                    <p class="view-date">
+                        19M views &#183 4 Years <!--HTML entity-->
+                    </p>
+                    <p class="author">
+                        Macdonal &#x2713
+                    </p>
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<style>
+    .subscribe_button {
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border: none;
+        /*height: 36px;
+        width: 105px; */
+        cursor: pointer;
+        border-radius: 2px;
+        padding-right: 20px; /*Used to add space from border */
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        margin-right: 8px; /*margin is used to add space between elements 
+        -ve value if you want to pull it in*/
+        transition: opacity 0.15s;
+    }
+
+    .subscribe_button:hover {
+        opacity: 0.8;
+    }
+
+    .subscribe_button:active {
+        opacity: 0.5;
+    }
+
+    .join_button {
+        border-color: rgb(41, 118, 211);
+        background-color: white;
+        border-style: solid;
+        padding-right: 20px; /*Used to add space from border */
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 20px;
+        cursor: pointer;
+        border-radius: 2px;
+        border-width: 2px;
+        color: rgb(41, 118, 211);
+        transition: background-color 1s, color 1s;
+    }
+
+    .join_button:hover { 
+        color: white;
+        background-color: rgb(41, 118, 211);
+    }
+
+    .join_button:active { 
+        opacity: 0.7;
+    }
+
+    .tweet_button {
+        border-color: rgb(41, 118, 211);
+        background-color: rgb(41, 118, 211);
+        color: white;
+        border-style: solid;
+        height: 36px;
+        width: 105px;
+        cursor: pointer;
+        border-radius: 18px;
+        border-width: 2px;
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 8px;
+        /*box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);*/
+        transition: box-shadow 1s;
+    }
+
+    .tweet_button:hover{
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+        /* Inset as first param incase the shadow has to appear inside */
+    }
+</style>
+<button class="subscribe_button">
+    Subscribe
+</button>
+
+<button class="join_button">
+    JOIN
+</button>
+
+<button class="tweet_button">
+    Tweet
+</button>
